@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OrbitTV</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #050714;
+      --bg-gradient: linear-gradient(135deg, #0b1c3d, #2b1055);
+      --primary: #6f8cff;
+      --secondary: #9d6bff;
+      --text-main: #ffffff;
+      --text-muted: #b8c1ff;
+      --card-bg: rgba(255,255,255,0.04);
+      --border-soft: rgba(255,255,255,0.08);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: var(--text-main);
+    }
+
+    header {
+      background: var(--bg-gradient);
+      padding: 90px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+
+    header p {
+      margin-top: 18px;
+      font-size: 1.2rem;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-buttons {
+      margin-top: 45px;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 30px;
+      border-radius: 999px;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      box-shadow: 0 0 25px rgba(111,140,255,0.45);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid var(--primary);
+      color: var(--primary);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    section {
+      padding: 90px 20px;
+      max-width: 1150px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-size: 2.2rem;
+    }
+
+    .section-title p {
+      color: var(--text-muted);
+      margin-top: 12px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-soft);
+      border-radius: 18px;
+      padding: 30px;
+    }
+
+    .card h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* GRATUITO */
+    .free {
+      text-align: center;
+      background: linear-gradient(180deg, rgba(157,107,255,0.12), transparent);
+      border-radius: 30px;
+    }
+
+    .free h2 {
+      font-size: 2.4rem;
+      color: var(--secondary);
+    }
+
+    .free p {
+      margin-top: 15px;
+      color: var(--text-muted);
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* DOWNLOAD TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--card-bg);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 18px 20px;
+      text-align: left;
+    }
+
+    th {
+      background: rgba(111,140,255,0.15);
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    tr:not(:last-child) td {
+      border-bottom: 1px solid var(--border-soft);
+    }
+
+    td {
+      color: var(--text-muted);
+    }
+
+    .download-btn {
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--border-soft);
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: var(--primary);
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>OrbitTV</h1>
+  <p>
+    La piattaforma che aggrega canali TV, sport, cinema e contenuti on-demand
+    in un’unica esperienza orbitale.
+  </p>
+
+  <div class="cta-buttons">
+    <a href="#download" class="btn btn-primary">Scarica OrbitTV</a>
+    <a href="#contenuti" class="btn btn-secondary">Scopri i contenuti</a>
+  </div>
+</header>
+
+<!-- CONTENUTI -->
+<section id="contenuti">
+  <div class="section-title">
+    <h2>Un universo di contenuti</h2>
+    <p>Dalla TV in diretta ai film on-demand, tutto ruota attorno a OrbitTV</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>📡 Canali TV & Sport</h3>
+      <p>
+        Accesso a canali sportivi, cinema, news e intrattenimento.
+        Tutti organizzati per categoria per una navigazione immediata.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🎬 Cinema & Intrattenimento</h3>
+      <p>
+        Canali dedicati a film, serie TV e contenuti tematici,
+        sempre aggiornati e facilmente accessibili.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>📺 Film e Serie On-Demand</h3>
+      <p>
+        Sfoglia un catalogo on-demand per guardare film e serie quando vuoi,
+        senza vincoli di orari.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- GRATUITO -->
+<section class="free">
+  <h2>Completamente Gratuito</h2>
+  <p>
+    OrbitTV è pensata per essere accessibile a tutti.
+    Nessun abbonamento, nessun costo nascosto:
+    installi l’app e inizi subito a esplorare l’universo dello streaming.
+  </p>
+</section>
+
+<!-- DOWNLOAD -->
+<section id="download">
+  <div class="section-title">
+    <h2>Download</h2>
+    <p>Scegli la tua piattaforma e inizia il viaggio</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Piattaforma</th>
+        <th>Versione</th>
+        <th>Note</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>📱 Android</td>
+        <td>v1.0</td>
+        <td>Compatibile con smartphone e tablet</td>
+        <td><a href="#" class="download-btn">Download</a></td>
+      </tr>
+      <tr>
+        <td>💻 Desktop</td>
+        <td>In arrivo</td>
+        <td>Windows / macOS / Linux</td>
+        <td>—</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<footer>
+  © 2026 <span>OrbitTV</span> — Tutti i contenuti in un’unica orbita
+</footer>
+
+</body>
+</html>
